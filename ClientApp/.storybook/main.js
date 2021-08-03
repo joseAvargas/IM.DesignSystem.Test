@@ -9,6 +9,7 @@ module.exports = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     '@storybook/addon-a11y',
+    "@storybook/addon-measure",
     {
       name: '@storybook/preset-scss',
       options: {
@@ -22,18 +23,5 @@ module.exports = {
   "core": {
     "builder": "webpack5"
   },
-  resolve: {
-    alias: {
-        'node_modules': path.join(__dirname, './node_modules'),
-        '@ng-bootstrap/ng-bootstrap': path.join(__dirname, './node_modules/@ng-bootstrap/ng-bootstrap')
-    }
-  },
-  module: {
-    rules: [
-        {
-            test: /\.(?:js|ts|d.ts)$/,
-            type: "node_modules/@ng-bootstrap/ng-bootstrap"
-        }
-    ]
-}
+  
 }
