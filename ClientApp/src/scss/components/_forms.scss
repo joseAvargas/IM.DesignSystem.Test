@@ -1,0 +1,176 @@
+.form-group{
+	margin-bottom: 1rem;
+}
+
+.form-control,
+.form-select{
+	font-size: .9rem;
+}
+
+.form-select{
+	option{
+		padding: 0.5rem;
+	}
+}
+
+
+
+.form-inline input[type='number'] {
+    max-width: 100px;
+}
+
+
+.input-spinner{ width: 125px;  flex-wrap: nowrap; display:inline-flex; vertical-align: middle;
+  input.form-control{ text-align: center; max-width: 46px; font-weight: bold;  
+	flex-basis:46px;  border-color:$border-color; flex-grow: 0; 
+   }
+  .btn{ width: 42px; text-align: center; padding-left: 0.5rem; padding-right: 0.5rem; }
+}
+
+.checkbox-btn{ position:relative;
+	input {
+	    position: absolute;
+	    z-index: -1;
+	    opacity: 0;
+	}
+	input:checked ~ .btn{
+		 border-color:$primary; background-color:$primary; color:#fff; 
+	}
+}
+
+.custom-control-input:disabled ~ .custom-control-label::before {
+    background-color: #e4e4e4;
+}
+
+.custom-checkbox .custom-control-input:disabled:checked ~ .custom-control-label::before {
+    background-color: rgba(49, 103, 235, 0.5);
+}
+
+.btn-check{ 
+	position:relative; display: inline-block; border:2px solid $gray-300; transition:0s!important;
+	input {
+	    position: absolute;
+	    z-index: -1;
+	    opacity: 0;
+	}
+	input:checked ~ .btn{
+		 border-color:$primary; background-color:$primary; color:#fff; 
+	}
+
+	&:hover:not(.active){
+		border-color:#bbb;
+	}
+}
+
+.js-check{ 
+	position: relative;
+	.title{
+		margin-left: 22px;
+	}
+	input {
+		position: absolute; top: 21px; left: 18px;
+	}
+	&.active{ border-color: $primary}
+	&:hover:not(.active){
+		border-color:#ccc;
+	}
+}
+
+.js-check.box{
+	width: 100%; border-width:3px; 
+}
+
+
+.card-header{
+	.form-check{ margin-bottom:0; padding-top:5px; padding-bottom: 5px; }
+}
+
+
+
+.custom-control {
+    position: relative;
+    display: block;
+    min-height: 1.7rem;
+    padding-left: 1.7rem;
+}
+
+.custom-control-input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.custom-checkbox .custom-control-label::before {
+	border-radius: 0.2rem;
+}
+
+.custom-control-label::before {
+	position: absolute;
+	top: 0.15rem;
+	left: 0rem;
+	display: block;
+	width: 1.2rem;
+	height: 1.2rem;
+	pointer-events: none;
+	content: "";
+	background-color: #fff;
+	border: #969696 solid 1px;
+}
+
+
+	.custom-control-input:checked ~ .custom-control-label::before {
+		color: #fff;
+		border-color: #3167eb;
+		background-color: #3167eb;
+	}
+
+
+	.custom-checkbox {		  
+		.custom-control-input:checked ~ .custom-control-label {
+		  &::after {
+			background-image: $custom-checkbox-indicator-icon-checked;
+		  }
+		}	
+	  }
+
+	  .custom-control-label::after {
+		position: absolute;
+		top: 0.15rem;
+		left: 0rem;
+		display: block;
+		width: 1.2rem;
+		height: 1.2rem;
+		content: "";
+		background: no-repeat 50%/50% 50%;
+	  }
+
+	  // Radios
+//
+// Tweak just a few things for radios.
+
+.custom-radio {
+	.custom-control-label::before {
+	  // stylelint-disable-next-line property-blacklist
+	  border-radius: $custom-radio-indicator-border-radius;
+	}
+  
+	.custom-control-input:checked ~ .custom-control-label {
+	  &::after {
+		background-image: $custom-radio-indicator-icon-checked;
+	  }
+	}
+  
+	.custom-control-input:disabled {
+	  &:checked ~ .custom-control-label::before {
+		/*background-color: $custom-control-indicator-checked-disabled-bg;*/
+	  }
+	}
+  }
+  
+  
+  // switches
+  //
+  // Tweak a few things for switches
+	
+
+  

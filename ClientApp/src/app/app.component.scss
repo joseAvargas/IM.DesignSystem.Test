@@ -1,0 +1,20 @@
+#code_btn_styles{
+    display: block;
+    .btn{
+        margin-right: 5px;
+        margin-top: 10px;
+    }
+}
+
+code { 
+    background: none !important;
+}
+
+pre {
+    white-space: pre-wrap;
+    background: rgb(0, 0, 0);
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+}
+

@@ -1,0 +1,74 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: HelveticaNeue-Thin;
+    src:url("../src/assets/fonts/helveticaneue-medium.woff") format("woff");
+    src: url("../src/assets/fonts/helveticaneue-medium.woff2") format("woff2"); 
+    font-kerning: none;
+    letter-spacing: 2px;  
+    font-weight: 200;
+   
+  }
+
+  @font-face {
+    font-family: HelveticaNeue-bold;
+    src:url("../src/assets/fonts/helveticaneue-bold.woff") format("woff");
+    src: url("../src/assets/fonts/helveticaneue-bold.woff2") format("woff2");   
+  }
+
+  @font-face {
+    font-family: HelveticaNeue-light;
+    src:url("../src/assets/fonts/helveticaneue-light.woff") format("woff");
+    src: url("../src/assets/fonts/helveticaneue-light.woff2") format("woff2");   
+  }
+
+@import "_functions";
+@import "scss/_variables-custom";
+
+
+
+/* ================== HELPERS  =================== */
+@import "scss/helpers/mixins";
+@import "scss/helpers/helper-classes"; 
+@import "scss/helpers/bg";
+@import "scss/helpers/typography"; 
+@import "../node_modules/font-awesome/scss/font-awesome";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+/* ================== SECTIONS =================== */
+body {
+     font-size: 00.9rem;
+      
+  }
+@import "scss/sections/header";
+@import "scss/sections/footer";
+@import "scss/sections/sidebar";
+@import "scss/helpers/helper-classes"; 
+@import "scss/components/cards-product";
+@import "scss/components/_search-filters";
+
+/* ================== COMPONENTS =================== */
+@import "scss/components/plugin-styles";
+@import "scss/components/buttons";
+@import "scss/components/items";
+@import "scss/components/lists";
+@import "scss/components/alerts";
+
+@import "scss/components/elements.scss";
+@import "scss/components/menu";
+@import "scss/components/forms";
+
+/* ================== PAGES =================== */
+@import "scss/pages/page-account";
+@import "scss/pages/page-base";
+@import "scss/pages/page-home";
+@import "scss/pages/page-detail";
+@import "scss/pages/page-listing";
+@import "scss/pages/page-order";
+
+
+
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+
+/* Importing Datepicker SCSS file. */
+@import "~ngx-bootstrap/datepicker/bs-datepicker";

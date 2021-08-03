@@ -1,0 +1,25 @@
+
+/* ================ PAGES HEADER ================== */
+.section-pagetop{ 
+	 padding:20px 0; 
+}
+
+.section-pagetop .breadcrumb{ 
+	padding:5px 0; 
+}
+
+
+.section-pagetop .breadcrumb-item{
+	font-size: 0.8rem;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    float: left;
+    padding-right: 0.5rem;
+    color: #545454;
+    content: var(--bs-breadcrumb-divider, ">") 
+}
+
+
+
+
+
